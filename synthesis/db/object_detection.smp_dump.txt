@@ -1,0 +1,7 @@
+
+State Machine - |obj_top_module|obj_fsm:dut|current_state
+Name current_state.FRONT current_state.RIGHT current_state.LEFT current_state.IDLE 
+current_state.IDLE 0 0 0 0 
+current_state.LEFT 0 0 1 1 
+current_state.RIGHT 0 1 0 1 
+current_state.FRONT 1 0 0 1 

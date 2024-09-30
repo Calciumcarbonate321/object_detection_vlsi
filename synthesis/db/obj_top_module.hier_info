@@ -1,0 +1,33 @@
+|obj_top_module
+clk => clk.IN1
+reset => reset.IN1
+L => L.IN1
+R => R.IN1
+F => F.IN1
+left_object_detected <= obj_fsm:dut.left_object
+right_object_detected <= obj_fsm:dut.right_object
+front_object_detected <= obj_fsm:dut.front_object
+
+
+|obj_top_module|obj_fsm:dut
+clk => current_state~1.DATAIN
+reset => current_state~3.DATAIN
+L => next_state.OUTPUTSELECT
+L => next_state.OUTPUTSELECT
+L => next_state.OUTPUTSELECT
+L => Selector1.IN2
+L => Selector0.IN2
+R => next_state.OUTPUTSELECT
+R => next_state.OUTPUTSELECT
+R => next_state.DATAA
+R => Selector2.IN3
+R => Selector0.IN3
+F => next_state.DATAA
+F => Selector3.IN3
+F => next_state.DATAA
+F => Selector0.IN0
+left_object <= left_object.DB_MAX_OUTPUT_PORT_TYPE
+right_object <= right_object.DB_MAX_OUTPUT_PORT_TYPE
+front_object <= front_object.DB_MAX_OUTPUT_PORT_TYPE
+
+
