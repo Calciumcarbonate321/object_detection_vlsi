@@ -1,0 +1,124 @@
+$date
+	Wed Nov 13 02:46:10 2024
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module obj_no_fsm_tb $end
+$var reg 1 ! L $end
+$var reg 1 " R $end
+$var reg 1 # F $end
+$var reg 1 $ B $end
+$var wire 1 % left_object $end
+$var wire 1 & right_object $end
+$var wire 1 ' front_object $end
+$var wire 1 ( back_object $end
+$var wire 1 ) front_right_object $end
+$var wire 1 * front_left_object $end
+$var wire 1 + back_right_object $end
+$var wire 1 , back_left_object $end
+
+$scope module uut $end
+$var wire 1 - L $end
+$var wire 1 . R $end
+$var wire 1 / F $end
+$var wire 1 0 B $end
+$var wire 1 % left_object $end
+$var wire 1 & right_object $end
+$var wire 1 ' front_object $end
+$var wire 1 ( back_object $end
+$var wire 1 ) front_right_object $end
+$var wire 1 * front_left_object $end
+$var wire 1 + back_right_object $end
+$var wire 1 , back_left_object $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+00
+0/
+0.
+0-
+$end
+#10000
+1!
+1-
+1%
+#20000
+0!
+1"
+0-
+1.
+1&
+0%
+#30000
+0"
+1#
+0.
+1/
+1'
+0&
+#40000
+0#
+1$
+0/
+10
+1(
+0'
+#50000
+1"
+1#
+0$
+1.
+1/
+00
+1)
+0(
+#60000
+1!
+0"
+1-
+0.
+1*
+0)
+#70000
+0!
+1"
+0#
+1$
+0-
+1.
+0/
+10
+1+
+0*
+#80000
+1!
+0"
+1-
+0.
+1,
+0+
+#90000
+0!
+0$
+0-
+00
+0,

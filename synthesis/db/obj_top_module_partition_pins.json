@@ -4,23 +4,43 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "left_object_detected",
+					"name" : "front_detected",
 					"strict" : false
 				},
 				{
-					"name" : "right_object_detected",
+					"name" : "left_detected",
 					"strict" : false
 				},
 				{
-					"name" : "front_object_detected",
+					"name" : "right_detected",
 					"strict" : false
 				},
 				{
-					"name" : "L",
+					"name" : "back_detected",
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "front_right_detected",
+					"strict" : false
+				},
+				{
+					"name" : "front_left_detected",
+					"strict" : false
+				},
+				{
+					"name" : "back_right_detected",
+					"strict" : false
+				},
+				{
+					"name" : "back_left_detected",
+					"strict" : false
+				},
+				{
+					"name" : "front_sensor",
+					"strict" : false
+				},
+				{
+					"name" : "right_sensor",
 					"strict" : false
 				},
 				{
@@ -28,11 +48,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "R",
+					"name" : "back_sensor",
 					"strict" : false
 				},
 				{
-					"name" : "F",
+					"name" : "left_sensor",
 					"strict" : false
 				}
 			]

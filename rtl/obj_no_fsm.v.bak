@@ -1,0 +1,43 @@
+module obj_no_fsm(
+    input wire reset,             // Reset signal
+    input wire front_sensor,      // Front sensor input
+    input wire left_sensor,       // Left sensor input
+    input wire right_sensor,      // Right sensor input
+    input wire back_sensor,       // Back sensor input
+    output reg front_detected,    // Front object detected
+    output reg left_detected,     // Left object detected
+    output reg right_detected,    // Right object detected
+    output reg back_detected,     // Back object detected
+    output reg front_right_detected, // Front-right object detected
+    output reg front_left_detected,  // Front-left object detected
+    output reg back_right_detected,  // Back-right object detected
+    output reg back_left_detected    // Back-left object detected
+);
+
+    always @(*) begin
+        // Reset all detected flags if reset signal is high
+        if (reset) begin
+            front_detected = 0;
+            left_detected = 0;
+            right_detected = 0;
+            back_detected = 0;
+            front_right_detected = 0;
+            front_left_detected = 0;
+            back_right_detected = 0;
+            back_left_detected = 0;
+        end 
+        else begin
+            // Basic sensor detections
+            front_detected = front_sensor && !left_sensor && !right_sensor && !back_sensor;
+            left_detected = !front_sensor && left_sensor && !right_sensor && !back_sensor;
+            right_detected = !front_sensor && !left_sensor && right_sensor && !back_sensor;
+            back_detected = !front_sensor && !left_sensor && !right_sensor && back_sensor;
+            
+            // Combined sensor detections
+            front_right_detected = front_sensor && right_sensor && !left_sensor && !back_sensor;
+            front_left_detected = front_sensor && left_sensor && !right_sensor && !back_sensor;
+            back_right_detected = back_sensor && right_sensor && !left_sensor && !front_sensor;
+            back_left_detected = back_sensor && left_sensor && !right_sensor && !front_sensor;
+        end
+    end
+endmodule

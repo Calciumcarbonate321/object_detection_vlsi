@@ -1,9 +1,30 @@
-D:/vlsi_project/rtl/obj_fsm.v {1 {vlog -work work -stats=none D:/vlsi_project/rtl/obj_fsm.v
+D:/vlsi_project/tb/tb_obj_top_module.v {1 {vlog -work work -stats=none D:/vlsi_project/tb/tb_obj_top_module.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_obj_top_module
+
+Top level modules:
+	tb_obj_top_module
+
+} {} {}} D:/vlsi_project/rtl/obj_no_fsm.v {1 {vlog -work work -stats=none D:/vlsi_project/rtl/obj_no_fsm.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module obj_no_fsm
+
+Top level modules:
+	obj_no_fsm
+
+} {} {}} D:/vlsi_project/rtl/obj_fsm.v {1 {vlog -work work -stats=none D:/vlsi_project/rtl/obj_fsm.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module obj_fsm
 
 Top level modules:
 	obj_fsm
+
+} {} {}} D:/vlsi_project/tb/tb_obj_no_fsm.v {1 {vlog -work work -stats=none D:/vlsi_project/tb/tb_obj_no_fsm.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_obj_no_fsm
+
+Top level modules:
+	tb_obj_no_fsm
 
 } {} {}} D:/vlsi_project/tb/tb_obj_fsm.v {1 {vlog -work work -stats=none D:/vlsi_project/tb/tb_obj_fsm.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -11,5 +32,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	tb_obj_fsm
+
+} {} {}} D:/vlsi_project/rtl/obj_top_module.v {1 {vlog -work work -stats=none {D:\vlsi_project\rtl\obj_top_module.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module obj_top_module
+
+Top level modules:
+	obj_top_module
 
 } {} {}}

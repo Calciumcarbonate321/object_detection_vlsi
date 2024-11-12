@@ -10,7 +10,7 @@ z2
 cModel Technology
 dD:/maven_silicon_alarm_clock/sim
 vobj_fsm
-Z0 !s110 1727615909
+Z0 !s110 1731447353
 !i10b 1
 !s100 dbF6E8XF3aQ5X5WFL>SPW3
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,38 +20,61 @@ Z3 dD:/vlsi_project/sim
 w1727615535
 8D:/vlsi_project/rtl/obj_fsm.v
 FD:/vlsi_project/rtl/obj_fsm.v
-!i122 8
+!i122 46
 L0 1 70
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1727615909.000000
+Z5 !s108 1731447353.000000
 !s107 D:/vlsi_project/rtl/obj_fsm.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/vlsi_project/rtl/obj_fsm.v|
 !i113 1
 Z6 o-work work
 Z7 tCvgOpt 0
-vobj_top_module
-!s110 1727704217
+vobj_no_fsm
+R0
 !i10b 1
-!s100 zfQ<50m4DcOEKX6l4DH@:0
+!s100 M7CJ[l>>6k;2H7]D<3f[j3
 R1
-IzM8zhM=;B@moVR8eTDecc1
+INIM`R9I1h;<YYH5fjKd8E3
 R2
 R3
-w1727704210
-8D:/vlsi_project/rtl/obj_top_module.v
-FD:/vlsi_project/rtl/obj_top_module.v
-!i122 10
-L0 1 23
+w1731447088
+8D:/vlsi_project/rtl/obj_no_fsm.v
+FD:/vlsi_project/rtl/obj_no_fsm.v
+!i122 50
+L0 1 43
 R4
 r1
 !s85 0
 31
-!s108 1727704217.000000
-!s107 D:/vlsi_project/rtl/obj_top_module.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/vlsi_project/rtl/obj_top_module.v|
+R5
+!s107 D:/vlsi_project/rtl/obj_no_fsm.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vlsi_project/rtl/obj_no_fsm.v|
+!i113 1
+R6
+R7
+vobj_top_module
+R0
+!i10b 1
+!s100 Cm9>^HDmodzeh5J34iSf62
+R1
+IDXPSdl0dgJ06AGWX7cMO@1
+R2
+R3
+w1731447346
+8D:\vlsi_project\rtl\obj_top_module.v
+FD:\vlsi_project\rtl\obj_top_module.v
+!i122 48
+L0 1 40
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:\vlsi_project\rtl\obj_top_module.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\vlsi_project\rtl\obj_top_module.v|
 !i113 1
 R6
 R7
@@ -66,7 +89,7 @@ R3
 w1727615893
 8D:/vlsi_project/tb/tb_obj_fsm.v
 FD:/vlsi_project/tb/tb_obj_fsm.v
-!i122 9
+!i122 47
 L0 1 82
 R4
 r1
@@ -78,8 +101,31 @@ R5
 !i113 1
 R6
 R7
+vtb_obj_no_fsm
+R0
+!i10b 1
+!s100 4EIT8h:OnKlH[0z^]AZS=3
+R1
+Ib3R=]Y0[U7E545KZL>llZ1
+R2
+R3
+w1731447130
+8D:/vlsi_project/tb/tb_obj_no_fsm.v
+FD:/vlsi_project/tb/tb_obj_no_fsm.v
+!i122 51
+L0 3 94
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/vlsi_project/tb/tb_obj_no_fsm.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vlsi_project/tb/tb_obj_no_fsm.v|
+!i113 1
+R6
+R7
 vtb_obj_top_module
-!s110 1727704352
+R0
 !i10b 1
 !s100 Lg_EhLR`kD=61P2`L]oh<1
 R1
@@ -89,13 +135,13 @@ R3
 w1727704349
 8D:/vlsi_project/tb/tb_obj_top_module.v
 FD:/vlsi_project/tb/tb_obj_top_module.v
-!i122 11
+!i122 49
 L0 1 90
 R4
 r1
 !s85 0
 31
-!s108 1727704352.000000
+R5
 !s107 D:/vlsi_project/tb/tb_obj_top_module.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/vlsi_project/tb/tb_obj_top_module.v|
 !i113 1

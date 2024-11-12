@@ -1,5 +1,5 @@
 Analysis & Synthesis report for obj_top_module
-Mon Sep 30 19:27:37 2024
+Wed Nov 13 03:14:52 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Standard Edition
 
 
@@ -13,12 +13,10 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Standard Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |obj_top_module|obj_fsm:dut|current_state
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -45,16 +43,16 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                            ;
 +------------------------------------+----------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Sep 30 19:27:37 2024              ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 13 03:14:52 2024              ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Standard Edition ;
 ; Revision Name                      ; obj_top_module                                     ;
 ; Top-level Entity Name              ; obj_top_module                                     ;
 ; Family                             ; MAX 10                                             ;
-; Total logic elements               ; 7                                                  ;
-;     Total combinational functions  ; 7                                                  ;
-;     Dedicated logic registers      ; 4                                                  ;
-; Total registers                    ; 4                                                  ;
-; Total pins                         ; 8                                                  ;
+; Total logic elements               ; 13                                                 ;
+;     Total combinational functions  ; 13                                                 ;
+;     Dedicated logic registers      ; 0                                                  ;
+; Total registers                    ; 0                                                  ;
+; Total pins                         ; 13                                                 ;
 ; Total virtual pins                 ; 0                                                  ;
 ; Total memory bits                  ; 0                                                  ;
 ; Embedded Multiplier 9-bit elements ; 0                                                  ;
@@ -69,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                           ; 10M08DAF484C8G     ;                    ;
+; Device                                                           ; 10M50DAF256C7G     ;                    ;
 ; Top-level entity name                                            ; obj_top_module     ; obj_top_module     ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
@@ -159,11 +157,10 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 8           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -173,75 +170,49 @@ https://fpgasoftware.intel.com/eula.
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path         ; Library ;
 +----------------------------------+-----------------+------------------------+--------------------------------------+---------+
 ; ../rtl/obj_top_module.v          ; yes             ; User Verilog HDL File  ; D:/vlsi_project/rtl/obj_top_module.v ;         ;
-; ../rtl/obj_fsm.v                 ; yes             ; User Verilog HDL File  ; D:/vlsi_project/rtl/obj_fsm.v        ;         ;
 +----------------------------------+-----------------+------------------------+--------------------------------------+---------+
 
 
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+---------------------------------------------+---------+
-; Resource                                    ; Usage   ;
-+---------------------------------------------+---------+
-; Estimated Total logic elements              ; 7       ;
-;                                             ;         ;
-; Total combinational functions               ; 7       ;
-; Logic element usage by number of LUT inputs ;         ;
-;     -- 4 input functions                    ; 5       ;
-;     -- 3 input functions                    ; 2       ;
-;     -- <=2 input functions                  ; 0       ;
-;                                             ;         ;
-; Logic elements by mode                      ;         ;
-;     -- normal mode                          ; 7       ;
-;     -- arithmetic mode                      ; 0       ;
-;                                             ;         ;
-; Total registers                             ; 4       ;
-;     -- Dedicated logic registers            ; 4       ;
-;     -- I/O registers                        ; 0       ;
-;                                             ;         ;
-; I/O pins                                    ; 8       ;
-;                                             ;         ;
-; Embedded Multiplier 9-bit elements          ; 0       ;
-;                                             ;         ;
-; Maximum fan-out node                        ; L~input ;
-; Maximum fan-out                             ; 5       ;
-; Total fan-out                               ; 49      ;
-; Average fan-out                             ; 1.81    ;
-+---------------------------------------------+---------+
++-----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                     ;
++---------------------------------------------+-------------------+
+; Resource                                    ; Usage             ;
++---------------------------------------------+-------------------+
+; Estimated Total logic elements              ; 13                ;
+;                                             ;                   ;
+; Total combinational functions               ; 13                ;
+; Logic element usage by number of LUT inputs ;                   ;
+;     -- 4 input functions                    ; 5                 ;
+;     -- 3 input functions                    ; 0                 ;
+;     -- <=2 input functions                  ; 8                 ;
+;                                             ;                   ;
+; Logic elements by mode                      ;                   ;
+;     -- normal mode                          ; 13                ;
+;     -- arithmetic mode                      ; 0                 ;
+;                                             ;                   ;
+; Total registers                             ; 0                 ;
+;     -- Dedicated logic registers            ; 0                 ;
+;     -- I/O registers                        ; 0                 ;
+;                                             ;                   ;
+; I/O pins                                    ; 13                ;
+;                                             ;                   ;
+; Embedded Multiplier 9-bit elements          ; 0                 ;
+;                                             ;                   ;
+; Maximum fan-out node                        ; back_sensor~input ;
+; Maximum fan-out                             ; 7                 ;
+; Total fan-out                               ; 57                ;
+; Average fan-out                             ; 1.46              ;
++---------------------------------------------+-------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                           ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------+----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name         ; Entity Name    ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------+----------------+--------------+
-; |obj_top_module            ; 7 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 8    ; 0            ; 0          ; |obj_top_module             ; obj_top_module ; work         ;
-;    |obj_fsm:dut|           ; 7 (7)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |obj_top_module|obj_fsm:dut ; obj_fsm        ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------+----------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                   ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name    ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+----------------+--------------+
+; |obj_top_module            ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 13   ; 0            ; 0          ; |obj_top_module     ; obj_top_module ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+-----------------------------------------------------------------------------------------------------------+
-; State Machine - |obj_top_module|obj_fsm:dut|current_state                                                 ;
-+---------------------+---------------------+---------------------+--------------------+--------------------+
-; Name                ; current_state.FRONT ; current_state.RIGHT ; current_state.LEFT ; current_state.IDLE ;
-+---------------------+---------------------+---------------------+--------------------+--------------------+
-; current_state.IDLE  ; 0                   ; 0                   ; 0                  ; 0                  ;
-; current_state.LEFT  ; 0                   ; 0                   ; 1                  ; 1                  ;
-; current_state.RIGHT ; 0                   ; 1                   ; 0                  ; 1                  ;
-; current_state.FRONT ; 1                   ; 0                   ; 0                  ; 1                  ;
-+---------------------+---------------------+---------------------+--------------------+--------------------+
-
-
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; obj_fsm:dut|current_state~4           ; Lost fanout        ;
-; obj_fsm:dut|current_state~5           ; Lost fanout        ;
-; Total Number of Removed Registers = 2 ;                    ;
-+---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -249,10 +220,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 4     ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -264,16 +235,14 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 8                           ;
-; cycloneiii_ff         ; 4                           ;
-;     CLR               ; 4                           ;
-; cycloneiii_lcell_comb ; 7                           ;
-;     normal            ; 7                           ;
-;         3 data inputs ; 2                           ;
+; boundary_port         ; 13                          ;
+; cycloneiii_lcell_comb ; 13                          ;
+;     normal            ; 13                          ;
+;         2 data inputs ; 8                           ;
 ;         4 data inputs ; 5                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.56                        ;
+; Average LUT depth     ; 2.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -292,7 +261,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Standard Edition
-    Info: Processing started: Mon Sep 30 19:27:30 2024
+    Info: Processing started: Wed Nov 13 03:14:46 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off object_detection -c obj_top_module
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -301,19 +270,17 @@ Info (12021): Found 1 design units, including 1 entities, in source file /vlsi_p
 Info (12021): Found 1 design units, including 1 entities, in source file /vlsi_project/rtl/obj_fsm.v
     Info (12023): Found entity 1: obj_fsm File: D:/vlsi_project/rtl/obj_fsm.v Line: 1
 Info (12127): Elaborating entity "obj_top_module" for the top level hierarchy
-Info (12128): Elaborating entity "obj_fsm" for hierarchy "obj_fsm:dut" File: D:/vlsi_project/rtl/obj_top_module.v Line: 21
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 26 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 3 output pins
-    Info (21061): Implemented 7 logic cells
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 13 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4808 megabytes
-    Info: Processing ended: Mon Sep 30 19:27:37 2024
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 4780 megabytes
+    Info: Processing ended: Wed Nov 13 03:14:52 2024
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:03
 
 
